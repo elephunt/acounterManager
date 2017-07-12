@@ -12,6 +12,6 @@ public class Controller {
 
     @RequestMapping(value = "get", method = RequestMethod.GET)
     public String getAllData() {
-        return "";
+        return "WZUPP";
     }
 }
