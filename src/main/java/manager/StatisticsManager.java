@@ -1,6 +1,6 @@
 package manager;
 
-import document.StatisticData;
+import common.jpa.StatisticsJpa;
 import org.springframework.beans.factory.annotation.Autowired;
 import repository.StatisticsRepository;
 
@@ -15,9 +15,8 @@ public class StatisticsManager {
     private StatisticsRepository statisticsRepository;
 
 
-    public List<StatisticData> getAllDataById(Long id) {
-        return statisticsRepository.findById(id);
+   public List<StatisticsJpa> getAllStatsByPlayerId(Long id){
+        return statisticsRepository.findStatisticsJpaById(id);
     }
-
 
 }

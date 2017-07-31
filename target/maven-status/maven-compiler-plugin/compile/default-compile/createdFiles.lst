@@ -1,0 +1,6 @@
+repository/StatisticsRepository.class
+document/StatisticData.class
+config/CouchBaseConfiguration.class
+MainApplication.class
+manager/StatisticsManager.class
+controller/Controller.class
